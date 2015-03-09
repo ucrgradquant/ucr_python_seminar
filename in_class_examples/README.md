@@ -23,10 +23,8 @@ UCR Python Seminar
 | ---------- | --------------------- |
 | Part 1     | tip_calculator.py     |
 |            | quadradic.py          |
-| ---------- | --------------------- |
 | Part 2     | ucr-e-mail.py         |
 |            | grades.py             |
-| ---------- | --------------------- |
 | Part 3     | grades_csv_emily.py   |
 |            | grades_emily.csv      |
 |            | grades_csv_all.py     |
