@@ -12,7 +12,4 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-
-UCR Python Seminar
-  
-  The example code for UCR's GradQuant Python Seminar.
+print("Hello World!")

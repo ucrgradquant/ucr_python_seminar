@@ -12,7 +12,22 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+# Tip Calculator
+#
+# We are going to use the bill, tax rate, and tip percentage to calculate the total.
+#
 
-UCR Python Seminar
-  
-  The example code for UCR's GradQuant Python Seminar.
+bill = raw_input("Bill amount: ")
+bill = float(bill)
+
+tax = 0.0875
+
+tip = 0.18
+
+meal = bill + bill * tax
+
+print "Meal total: %.2f" % meal
+
+total = meal + meal * tip
+
+print "Total with tip: %.2f" % total

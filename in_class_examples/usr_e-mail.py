@@ -12,7 +12,31 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+# Calculate the persons UCR Net ID.
 
-UCR Python Seminar
-  
-  The example code for UCR's GradQuant Python Seminar.
+student_names = [
+        "Adam Jones",
+        "Beth Smith",
+        "Caleb Kim",
+        "Danny Jacobs",
+        "Eric Jones",
+    ]
+    
+print student_names
+
+# constants
+FIRST_NAME_INDEX = 0
+LAST_NAME_INDEX = 1
+
+# For each student
+for name in student_names:
+        name = name.lower()
+        # Find the first and last name
+        name_split = name.split(" ")
+
+        # Print Create UCR ID
+        print "%s%s%03d"%(name_split[FIRST_NAME_INDEX][0], \
+                name_split[LAST_NAME_INDEX][0:4], 1)
+
+
+# Two String methods: split, lower
