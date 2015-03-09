@@ -19,17 +19,17 @@ UCR Python Seminar
   The Python Seminar is broken up into three lectures followed by a question and 
   answer time. The Q&A uses the following exmaples:
 
-|----------|---------------------|
-|Seminar   | Example             |
-|----------|---------------------|
-|Part 1    | tip_calculator.py   |
-|          | quadradic.py        |
-|----------|---------------------|
-|Part 2    | ucr-e-mail.py       |
-|          | grades.py           |
-|----------|---------------------|
-|Part 3    | grades_csv_emily.py |
-|          | grades_emily.csv    |
-|          | grades_csv_all.py   |
-|          | grades.csv          |
-|----------|---------------------|
+| ---------- | --------------------- |
+| Seminar    | Example               |
+| ---------- | --------------------- |
+| Part 1     | tip_calculator.py     |
+|            | quadradic.py          |
+| ---------- | --------------------- |
+| Part 2     | ucr-e-mail.py         |
+|            | grades.py             |
+| ---------- | --------------------- |
+| Part 3     | grades_csv_emily.py   |
+|            | grades_emily.csv      |
+|            | grades_csv_all.py     |
+|            | grades.csv            |
+| ---------- | --------------------- |
