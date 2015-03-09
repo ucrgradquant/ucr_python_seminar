@@ -19,7 +19,6 @@ UCR Python Seminar
   The Python Seminar is broken up into three lectures followed by a question and 
   answer time. The Q&A uses the following exmaples:
 
-| ---------- | --------------------- |
 | Seminar    | Example               |
 | ---------- | --------------------- |
 | Part 1     | tip_calculator.py     |
@@ -32,4 +31,3 @@ UCR Python Seminar
 |            | grades_emily.csv      |
 |            | grades_csv_all.py     |
 |            | grades.csv            |
-| ---------- | --------------------- |
