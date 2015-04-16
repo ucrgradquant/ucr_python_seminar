@@ -17,17 +17,21 @@
 # We are going to use the bill, tax rate, and tip percentage to calculate the total.
 #
 
-bill = raw_input("Bill amount: ")
-bill = float(bill)
+print "Lets calculate the total bill with tip."
 
-tax = 0.0875
+# Get bill about from user.
+bill = 10.25
 
-tip = 0.18
+# Define tax and tip amount.
+tax_rate = 0.09
+tip_perc = 0.20
 
-meal = bill + bill * tax
+# Calculate total meal cost and show the value to the user.
+bill_total = bill * (1 + tax_rate)
+print "Bill with tax: ${0:0.2f}".format(bill_total)
 
-print "Meal total: %.2f" % meal
+# Calculate total meal with tip cost and show the value to the user.
+tip = bill_total * tip_perc
+print "tip: $" + str(tip)
+print "Total bill: $" + str(bill_total + tip)
 
-total = meal + meal * tip
-
-print "Total with tip: %.2f" % total

@@ -17,26 +17,26 @@ import math
 
 print "Lets calculate the Quadratic Equation."
 
-a = raw_input("a: ")
-b = raw_input("b: ")
-c = raw_input("c: ")
+# Get the values from the user.
+a = 1
+b = 9
+c = 2
 
-a = float(a)
-b = float(b)
-c = float(c)
+# Apply formula.
+b24ac = b**2 - 4 * a * c
 
-delta = b**2 - 4 * a * c
-
-if (delta < 0):
-    print "Error"
+if (b24ac < 0):
+    print "negative value"
     exit()
-    
-delta_root = math.sqrt(delta)
 
-# Positive value
-positive = (-b + delta_root ) / (2 * a)
 
-# Negative value
-negative = (-b - delta_root ) / (2 * a)
+# postive formula
+pos_value = (-b + math.sqrt(b24ac)) / (2 * a)
 
-print "The quadratic result is %f and %f" % (positive, negative)
+# negative formula
+neg_value = (-b - math.sqrt(b24ac)) / (2 * a)
+
+# Print out the result
+string_result = """Quadratic equation for (a={0}, b={1}, c={2})
+the positive result is {3} and the negative result is {4}"""
+print string_result.format(a,b,c,pos_value, neg_value)

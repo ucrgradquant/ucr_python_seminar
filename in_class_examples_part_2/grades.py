@@ -32,25 +32,22 @@ SCORE_INDEX = 2
 TOTAL_INDEX = 3
 
 # Find Adam's average score
-score = 0
-total = 0
-for row in adam_grades:
-        score = score + row[SCORE_INDEX]
-        total += row[TOTAL_INDEX]
-
-average = float(score) / total
-print average
-print type(average)
+total_score = 0
+total_possible = 0
+for weekly_assignment in adam_grades:
+    total_score = total_score + weekly_assignment[SCORE_INDEX]
+    total_possible = total_possible + weekly_assignment[TOTAL_INDEX]
+    
+average = float(total_score) / total_possible
 
 # Find Adam's letter grade
 if average > 0.90:
-        print "A"
+    print "A"
 elif average > 0.80:
-        print "B"
+    print "B"
 elif average > 0.70:
-        print "C"
+    print "C"
 elif average > 0.60:
-        print "D"
-else :
-        print "F"
-
+    print "D"
+else:
+    print "F"

@@ -22,21 +22,20 @@ student_names = [
         "Eric Jones",
     ]
     
-print student_names
-
-# constants
-FIRST_NAME_INDEX = 0
-LAST_NAME_INDEX = 1
-
-# For each student
+# Print each student's UCR Net ID
+int_number = 0
 for name in student_names:
-        name = name.lower()
-        # Find the first and last name
-        name_split = name.split(" ")
 
-        # Print Create UCR ID
-        print "%s%s%03d"%(name_split[FIRST_NAME_INDEX][0], \
-                name_split[LAST_NAME_INDEX][0:4], 1)
+    # Find the first and last name
+    names = name.split()
 
+    # Normalize input
+    first_name = names[0].lower()
+    last_name = names[1].lower()
+    int_number = int_number + 1
 
-# Two String methods: split, lower
+    # Create UCR Net ID
+    net_id = "{0}{1}{2:03d}".format(first_name[0], last_name[0:4], int_number)
+    
+    # Print the student's UCR Net ID
+    print "{0} UCR Net ID is {1}.".format(name, net_id)

@@ -18,3 +18,20 @@
 UCR Python Seminar
   
   The example code for UCR's GradQuant Python Seminar.
+
+Seminar Individual Parts
+
+  The Python Seminar is broken up into three lectures followed by a question and 
+  answer time. The Q&A uses the following examples:
+
+| Seminar    | Example               |
+| ---------- | --------------------- |
+| Part 1     | tip_calculator.py     |
+|            | quadradic.py          |
+| Part 2     | ucr-e-mail-input.py   |
+|            | ucr-e-mail-list.py    |
+|            | grades.py             |
+| Part 3     | grades_csv_emily.py   |
+|            | grades_emily.csv      |
+|            | grades_csv_all.py     |
+|            | grades.csv            |

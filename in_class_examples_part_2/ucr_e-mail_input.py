@@ -1,4 +1,3 @@
-<!---
 #
 # Copyright 2009-2013 by The Regents of the University of California
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,19 +12,21 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
--->
-UCR Python Seminar
+# Calculate the persons UCR Net ID.
 
-  The Python Seminar is broken up into three lectures followed by a question and 
-  answer time. The Q&A uses the following exmaples:
 
-| Seminar    | Example               |
-| ---------- | --------------------- |
-| Part 1     | tip_calculator.py     |
-|            | quadradic.py          |
-| Part 2     | ucr-e-mail.py         |
-|            | grades.py             |
-| Part 3     | grades_csv_emily.py   |
-|            | grades_emily.csv      |
-|            | grades_csv_all.py     |
-|            | grades.csv            |
+# Get first and last name and number from user.
+first_name = raw_input("Enter your first name: ")
+last_name = raw_input("Enter your last name: ")
+number = raw_input("Enter a number: ")
+
+# Normalize the input.
+first_name = first_name.lower()
+last_name = last_name.lower()
+int_number = int(number)
+
+# Create UCR Net ID
+net_id = "{0}{1}{2:03d}".format(first_name[0], last_name[0:4], int_number)
+
+# Print the UCR Net ID
+print "Your UCR Net ID is {0}.".format(net_id)
